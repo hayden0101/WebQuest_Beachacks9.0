@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const User = require('../jsmodels/users');
+const userController = require('../controllers/userController');
 
-router.post('/', async (req, res) => {
-  const newUser = new User(req.body);
-  await newUser.save();
-  res.json(newScore);
-});
+router.post('/', userController.signup);
+router.post('/login', userController.login);
+router.get('/:id', userController.getUser);
+
+module.exports = router;

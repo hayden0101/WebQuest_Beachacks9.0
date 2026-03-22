@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const Leaderboard = require('../jsmodels/leaderboard');
+const controller = require('../controllers/leaderboardController');
 
-router.post('/', async (req, res) => {
-  const newBoard = new Leaderboard(req.body);
-  await newBoard.save();
-  res.json(newBoard);
-});
+router.post('/', controller.addEntry);
+router.get('/', controller.getTop);
+router.put('/:id', controller.updateEntry);
+
+module.exports = router;
