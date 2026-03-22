@@ -1,11 +1,37 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebQuest</title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="container">
+            <p>Login Page</p>
+
+            <form class="container">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter username" />
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="text" id="email" placeholder="Enter email" />
+                </div>
+                <button class="text" type="submit">Submit</button>
+            </form>
+
+            <a href="forgotpass.html">Forgot Password?</a>
+            <a href="signup.html">Create Account</a>
+        </div>
+    </div>
+    <script src="../Guest/script.js"></script>
+</body>
+
 </html>
