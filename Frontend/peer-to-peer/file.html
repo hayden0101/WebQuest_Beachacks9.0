@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer-to-Peer Video Chat</title>
+    <link rel="stylesheet" href="peer-to-peer.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Peer-to-Peer Video Chat</h1>
+
+        <div class="video-container">
+            <div class="video-wrapper">
+                <video id="localVideo" autoplay muted playsinline></video>
+                <p>Your Camera</p>
+            </div>
+            <div class="video-wrapper">
+                <video id="remoteVideo" autoplay playsinline></video>
+                <p>Remote Camera</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="startButton">Start Camera</button>
+            <button id="callButton" disabled>Call</button>
+            <button id="answerButton" disabled>Answer</button>
+            <button id="hangupButton" disabled>Hang Up</button>
+        </div>
+
+        <div class="signaling">
+            <div class="offer-section">
+                <h3>Step 1: Create Offer (Caller)</h3>
+                <button id="createOfferButton" disabled>Create Offer</button>
+                <textarea id="offerTextarea" placeholder="Offer will appear here. Copy and send to peer."></textarea>
+            </div>
+
+            <div class="answer-section">
+                <h3>Step 2: Answer Offer (Receiver)</h3>
+                <textarea id="remoteOfferTextarea" placeholder="Paste the offer from your peer here."></textarea>
+                <button id="createAnswerButton" disabled>Create Answer</button>
+                <textarea id="answerTextarea" placeholder="Answer will appear here. Copy and send back to peer."></textarea>
+            </div>
+
+            <div class="connect-section">
+                <h3>Step 3: Connect</h3>
+                <textarea id="remoteAnswerTextarea" placeholder="Paste the answer from your peer here."></textarea>
+                <button id="connectButton" disabled>Connect</button>
+            </div>
+        </div>
+
+        <div class="status">
+            <p id="status">Status: Ready</p>
+        </div>
+    </div>
+
+    <script src="peer-to-peer.js"></script>
+</body>
+</html>

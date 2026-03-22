@@ -6,21 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebQuest-Game</title>
+    <link rel="stylesheet" href="gamecontainer.css" />
   </head>
   <body>
     <h1>WebQuest-Game</h1>
-    <button onclick="startCamera()">Turn on Camera & Mic</button>
-    <video id="video" autoplay playsinline></video>
-    <!doctype html>
-    <html>
-      <body>
-        <button id="listenBtn">Start Listening</button>
-        <script type="module" src="main.js"></script>
-      </body>
-    </html>
-    <div>
+
+    <div class="game-controls">
+      <button onclick="startCamera()">Turn on Camera & Mic</button>
+      <video id="video" autoplay playsinline></video>
+    </div>
+
+    <div class="listen-section">
+      <button id="listenBtn">Start Listening</button>
+    </div>
+
+    <div class="navigation">
       <a href="../index.html"><button>Go back</button></a>
     </div>
+
+    <script type="module" src="main.js"></script>
     <script src="gamecontainer.js"></script>
   </body>
 </html>
