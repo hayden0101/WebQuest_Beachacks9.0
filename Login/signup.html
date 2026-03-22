@@ -1,35 +1,41 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebQuest</title>
-    <link rel="stylesheet" href="./signup.css" />
-  </head>
-  <body>
-    <p>Creating an Account</p>
 
-    <form>
-      <label for="email">Email:</label>
-      <input type="text" id="email" placeholder="Enter email" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebQuest</title>
+  <link rel="stylesheet" href="./signup.css" />
+</head>
 
-      <button type="submit">Submit</button>
-    </form>
+<body>
+  <div class="flex-container">
+    <div class="container">
+      <p>Creating an Account</p>
 
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" placeholder="Enter username" />
-      <button type="submit">Submit</button>
-    </form>
+      <form class="container">
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter email" />
+        </div>
 
-    <form>
-      <label for="password">Password:</label>
-      <input type="text" id="password" placeholder="Enter password" />
-      <button type="submit">Submit</button>
-    </form>
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter username" />
+        </div>
 
-    <a href="index.html">Have an account?</a>
-  </body>
+        <div>
+          <label for="password">Password:</label>
+          <input type="text" id="password" placeholder="Enter password" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+      <a href="index.html">Have an account?</a>
+    </div>
+  </div>
+</body>
+
 </html>
