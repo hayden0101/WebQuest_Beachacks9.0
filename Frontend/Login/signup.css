@@ -1,6 +1,6 @@
 body {
     background-color: rgb(33, 135, 245);
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .flex-container {
@@ -20,6 +20,12 @@ body {
     padding: 10px;
 }
 
+input {
+    font-size: 30px;
+}
 a {
-    font-size: 10px;
+    font-size: 15px;
+}
+.text {
+    font-size: 25px;
 }

@@ -1,3 +1,4 @@
+
 * {
     background-color: blueviolet;
 }
@@ -7,7 +8,7 @@
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 220px;
     text-align: center;
     color: white;
 }
@@ -22,8 +23,13 @@ button {
     border: none;
     padding: 10px 20px;
     margin: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-align: center;
-    flex: 1;
+    /* flex: 1; */
+    /* height: 100px; */
+    /* width: 200px */
+}
 
+.text {
+    font-size: 80px;
 }

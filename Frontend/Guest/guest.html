@@ -1,21 +1,31 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebQuest</title>
-  </head>
-  <body>
-    <p>Guest</p>
 
-    <form>
-      <label for="GuestName">Guest Name:</label>
-      <input type="text" id="username" placeholder="Enter name" />
-      <button type="submit">Submit</button>
-    </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebQuest</title>
+  <link rel="stylesheet" href="guest.css" />
+</head>
 
-    <a href="../Login/index.html">Have an account?</a>
-  </body>
+<body>
+  <div class="flex-container">
+    <div class="container">
+      <p>Guest</p>
+
+      <form class="container">
+        <div>
+          <label for="GuestName">Guest Name:</label>
+          <input type="text" id="username" placeholder="Enter name" />
+        </div>
+        <button class="text" type="submit">Submit</button>
+      </form>
+
+      <a href="../Login/index.html">Have an account?</a>
+    </div>
+  </div>
+</body>
+
 </html>
