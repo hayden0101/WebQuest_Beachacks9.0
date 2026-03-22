@@ -14,16 +14,10 @@ async function startCamera() {
     });
     videoEl.srcObject = stream;
     await videoEl.play();
-    canvas.width = W;
-    canvas.height = H;
-    sending = true;
-    sendFrameLoop();
     start.disabled = false;
   } catch (e) {
     start.disabled = true;
     console.error(e);
-    alert(
-      "We couldn't access your camera. Please allow camera permissions and try again.",
-    );
+    alert("Real error: " + e.message);
   }
 }
