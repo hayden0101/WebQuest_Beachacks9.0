@@ -10,6 +10,31 @@
   <body>
     <h1>Game Filters</h1>
     <p>Choose between the different game options</p>
+
+    <label for="region">Choose a region:</label>
+
+    <select id="region">
+      <option value="">--Select--</option>
+      <option value="local">Local</option>
+      <option value="global">Global</option>
+    </select>
+
+    <div>
+      <label for="players">Choose number of players:</label>
+      <select id="players">
+        <option value="">--Select--</option>
+        <option value="local">Duos</option>
+        <option value="global">Trios</option>
+        <option value="global">Quads</option>
+      </select>
+    </div>
+
+    <p>
+      Add an image for emoji:
+      <input type="file" id="fileinput" accept="image/*" />
+    </p>
+    <img id="preview" width="200" />
+
     <div>
       <a href="../index.html"><button>Go back</button></a>
     </div>
