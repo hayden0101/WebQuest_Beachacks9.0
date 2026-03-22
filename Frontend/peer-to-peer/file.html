@@ -42,8 +42,19 @@
                 <textarea id="answerTextarea" placeholder="Answer will appear here. Copy and send back to peer."></textarea>
             </div>
 
+            <div class="candidates-section">
+                <h3>Step 3: Exchange ICE Candidates</h3>
+                <label>Your ICE Candidates:</label>
+                <textarea id="localCandidatesTextarea" placeholder="ICE candidates will appear here. Copy and send to peer." readonly></textarea>
+                <button id="copyCandidatesButton" disabled>Copy Candidates</button>
+                
+                <label>Peer's ICE Candidates:</label>
+                <textarea id="remoteCandidatesTextarea" placeholder="Paste ICE candidates from your peer here."></textarea>
+                <button id="addCandidatesButton" disabled>Add Candidates</button>
+            </div>
+
             <div class="connect-section">
-                <h3>Step 3: Connect</h3>
+                <h3>Step 4: Connect</h3>
                 <textarea id="remoteAnswerTextarea" placeholder="Paste the answer from your peer here."></textarea>
                 <button id="connectButton" disabled>Connect</button>
             </div>

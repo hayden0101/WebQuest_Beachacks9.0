@@ -113,6 +113,15 @@ button:disabled {
   text-align: center;
 }
 
+.signaling label {
+  display: block;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
 textarea {
   width: 100%;
   min-height: 80px;
