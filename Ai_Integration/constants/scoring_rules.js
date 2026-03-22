@@ -1,4 +1,4 @@
-// Scoring Rules - ASI:One
+// Scoring Rules 
 // Configuration for scoring algorithm
 
 export const SCORING_RULES = {
