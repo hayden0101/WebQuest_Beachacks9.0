@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const Highscore = require('../jsmodels/highscore');
+const controller = require('../controllers/highscoreController');
 
-router.post('/', async (req, res) => {
-  const newScore = new Highscore(req.body);
-  await newScore.save();
-  res.json(newScore);
-});
+router.post('/', controller.submitHighscore);
+router.get('/user/:userId', controller.getUserHighscore); 
+router.get('/top', controller.getTopHighscores);       
+
+module.exports = router;

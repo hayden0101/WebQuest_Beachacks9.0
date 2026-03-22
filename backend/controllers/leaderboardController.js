@@ -15,8 +15,9 @@ exports.addEntry = async (req, res) => {
 exports.getTop = async (req, res) => {
   try {
     const limit = parseInt(req.query.limit, 10) || 50;
-    const top = await Leaderboard.find({/* optionally exclude guests */})
-      .sort({ highscore_total: -1 })
+    const sortField = req.query.sort || 'highscore_total';
+    const top = await Leaderboard.find()
+      .sort({ [sortField]: -1 })
       .limit(limit);
     res.json(top);
   } catch (err) {
